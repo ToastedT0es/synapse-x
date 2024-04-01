@@ -513,7 +513,7 @@ spy.BorderSizePixel = 0
 spy.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
 spy.Size = UDim2.new(0, 80, 0, 18)
 spy.Font = Enum.Font.SourceSans
-spy.Text = " Remote Spy"
+spy.Text = "Aimbot/Esp"
 spy.TextColor3 = Color3.fromRGB(255, 255, 255)
 spy.TextSize = 14.000
 spy.TextXAlignment = Enum.TextXAlignment.Left
@@ -522,7 +522,7 @@ spy.MouseButton1Click:Connect(function()
     scriptselected = "spy"
 end)
 
-dumper.Name = "dumper"
+dumper.Name "dumper"
 dumper.Parent = select
 dumper.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 dumper.BackgroundTransparency = 1.000
@@ -612,7 +612,7 @@ execute_2.MouseButton1Click:Connect(function()
             loadstring(game:HttpGet("https://pastebin.com/raw/J8AX35Fg"))()
         end
         if scriptselected == "spy" then
-            loadstring(game:HttpGet('https://pastebin.com/raw/JZaJe9Sg'))()
+            loadstring(game:HttpGet"https://gitlab.com/te4224/Scripts/-/raw/main/Universal%20Aimbot%20N%20Esp/v2/main.lua")();
         end
         if scriptselected == "dumper" then
             saveinstance()
@@ -1206,7 +1206,7 @@ while true do
             descri.Text = "ESP Made by ic3w0lf using the Drawing API."
         end
         if scriptselected == "spy" then
-            descri.Text = "Allows you to view RemoteEvents and RemoteFunctions called."
+            descri.Text = "Aimbot/Esp Credits in script."
         end
         if scriptselected == "dumper" then
             descri.Text = "Dumps the place as a .rbxl file in your workspace folder."
