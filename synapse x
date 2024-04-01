@@ -1,7 +1,3 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
--- Synapse X in game executor reworked by Cremi for scriptblox.com
 
 pcall(function() game.CoreGui["Synapse X"]:Destroy() end)
 
@@ -355,7 +351,7 @@ execute.MouseButton1Click:Connect(function()
         loadstring(Source.Text)()
     end
     if injected == false then
-        title.Text = "Synapse X - (Not injected! Press attach)"
+        title.Text = "Synapse X - (Not injected! Press inject!)"
     end
 end)
 
@@ -412,7 +408,7 @@ scripthub.MouseButton1Click:Connect(function()
     end
 end)
 
-Attach.Name = "Attach"
+Attach.Name = "Inject"
 Attach.Parent = MainFrame
 Attach.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
 Attach.BackgroundTransparency = 0.800
@@ -420,7 +416,7 @@ Attach.BorderSizePixel = 0
 Attach.Position = UDim2.new(0.741144657, 0, 0.887499988, 0)
 Attach.Size = UDim2.new(0, 84, 0, 30)
 Attach.Font = Enum.Font.Arial
-Attach.Text = "Attach"
+Attach.Text = "Inject"
 Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
 Attach.TextSize = 14.000
 Attach.MouseButton1Click:Connect(function()
@@ -436,11 +432,13 @@ Attach.MouseButton1Click:Connect(function()
         wait(1.5)
         title.Text = "Synapse X - (Checking Whitelist...)"
         wait(0.8)
+        title.Text = "Cumming in your mom"
+        wait(1)
         title.Text = "Synapse X - (Scanning...)"
         wait(0.3)
         title.Text = "Synapse X - (Ready!)"
         wait(0.5)
-        title.Text = "Synapse X - vRBX (Modded by CremiWorld)"
+        title.Text = "Synapse X - (ToastedToes)"
         injected = true
     end
 end)
