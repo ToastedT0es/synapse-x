@@ -370,25 +370,6 @@ clear.MouseButton1Click:Connect(function()
     Source.Text = ""
 end)
 
-options.Name = "options"
-options.Parent = MainFrame
-options.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-options.BackgroundTransparency = 0.800
-options.BorderSizePixel = 0
-options.Position = UDim2.new(0.285157200, 0, 0.887499988, 0)
-options.Size = UDim2.new(0, 84, 0, 30)
-options.Font = Enum.Font.Arial
-options.Text = "Options"
-options.TextColor3 = Color3.fromRGB(255, 255, 255)
-options.TextSize = 14.000
-options.MouseButton1Click:Connect(function()
-    if optionspage.Visible == true then
-        optionspage.Visible = false
-    elseif optionspage.Visible == false then
-        optionspage.Visible = true
-    end
-end)
-
 scripthub.Name = "scripthub"
 scripthub.Parent = MainFrame
 scripthub.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
