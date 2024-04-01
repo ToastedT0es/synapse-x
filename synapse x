@@ -121,7 +121,7 @@ Mini.TextSize = 14.000
 Mini.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "Synapse X";
-        Text = "Synapse X minimized.";
+        Text = "Synapse X - ToastedT0es minimized.";
         Duration = 2;
     })
     synminbutt.Visible = true
