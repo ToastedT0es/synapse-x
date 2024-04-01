@@ -3,6 +3,11 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "Made by ToastedT0es"
 })
 
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Synapse - X",
+	Text = "Discord: toastedt0es"
+})
+
 wait(1)
 
 pcall(function() game.CoreGui["Synapse X"]:Destroy() end)
