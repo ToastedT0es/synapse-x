@@ -404,7 +404,7 @@ Attach.MouseButton1Click:Connect(function()
     if injected == true then
         title.Text = "Synapse X - (Already injected!)"
         wait(1)
-        title.Text = "Synapse X - vRBX (Modded by CremiWorld)"
+        title.Text = "Synapse X - ToastedT0es)"
     end
     if injected == false then
         title.Text = "Synapse X - (Checking...)"
