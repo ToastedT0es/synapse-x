@@ -1,37 +1,21 @@
-local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
-
-Notification:Notify({
-	Title = "Synapse X - 1.0.0 (Beta)",
-	Description = "Made by ToastedT0es and VoidGamerCoreGameFan."},
-{OutlineColor = Color3.fromRGB(219, 69, 39),
-	Time = 5,
-	Type = "image"},
-{Image = "http://www.roblox.com/asset/?id=9524079134",
-	ImageColor = Color3.fromRGB(219, 69, 39)
-})
-
-Notification:Notify({Title = "Synapse X - 1.0.0 (Beta)",
-	Description = "Discord: madcityguy30."},
-{OutlineColor = Color3.fromRGB(219, 69, 39),
-	Time = 5,
-	Type = "image"},
-{Image = "http://www.roblox.com/asset/?id=9524079134",
-	ImageColor = Color3.fromRGB(219, 69, 39)
-})
-
-wait(1)
-
-pcall(function() game.CoreGui["Synapse X"]:Destroy() end)
-
-local SynapseXreal = Instance.new("ScreenGui")
+local SynapseX = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
-local bar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Bar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
 local Close = Instance.new("TextButton")
 local Mini = Instance.new("TextButton")
 local Min = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
-local security = Instance.new("TextLabel")
+local Tabs = Instance.new("Folder")
+local NewTab = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Tab_1 = Instance.new("Folder")
+local ScriptTitle = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local RemoveTab = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Security = Instance.new("TextLabel")
 local EditorFrame = Instance.new("ScrollingFrame")
 local Source = Instance.new("TextBox")
 local Comments_ = Instance.new("TextLabel")
@@ -42,144 +26,102 @@ local Strings_ = Instance.new("TextLabel")
 local Tokens_ = Instance.new("TextLabel")
 local Numbers_ = Instance.new("TextLabel")
 local Lines = Instance.new("TextLabel")
-local title = Instance.new("TextLabel")
-local list = Instance.new("Frame")
-local execute = Instance.new("TextButton")
-local clear = Instance.new("TextButton")
-local options = Instance.new("TextButton")
-local scripthub = Instance.new("TextButton")
-local Attach = Instance.new("TextButton")
-local title_2 = Instance.new("ImageLabel")
-local scripthub_2 = Instance.new("Frame")
-local optionspage = Instance.new("Frame")
-local bar_2 = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local List = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ScriptHub = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Inject = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Logo = Instance.new("ImageLabel")
+local SynapseXButton = Instance.new("ImageButton")
+local ScriptHub_2 = Instance.new("Frame")
+local bar = Instance.new("Frame")
 local select = Instance.new("Frame")
 local dex = Instance.new("TextButton")
 local esp = Instance.new("TextButton")
 local spy = Instance.new("TextButton")
 local dumper = Instance.new("TextButton")
 local backdoor = Instance.new("TextButton")
-local desc = Instance.new("Frame")
-local descri = Instance.new("TextLabel")
+local Description = Instance.new("Frame")
+local DescriptionText = Instance.new("TextLabel")
+local title = Instance.new("TextLabel")
+local Execute_2 = Instance.new("TextButton")
+local Close_2 = Instance.new("TextButton")
+local title_2 = Instance.new("ImageLabel")
+local UICorner_11 = Instance.new("UICorner")
+local OptionSpage = Instance.new("Frame")
 local title_3 = Instance.new("TextLabel")
-local execute_2 = Instance.new("TextButton")
-local close = Instance.new("TextButton")
 local title_4 = Instance.new("ImageLabel")
-local title_5 = Instance.new("TextLabel")
-local title_6 = Instance.new("ImageLabel")
-local synminbutt = Instance.new("ImageButton")
 local synapsex3 = Instance.new("TextButton")
-local Tabs = Instance.new("Folder")
-local NewTab = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
 
-local scriptselected = "none"
-local injected = false
-
---Properties:
-
-SynapseXreal.Name = "Synapse X"
-SynapseXreal.Parent = game.CoreGui
-SynapseXreal.ResetOnSpawn = false
+SynapseX.Name = "SynapseX"
+SynapseX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SynapseX.ResetOnSpawn = false
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = SynapseXreal
+MainFrame.Parent = SynapseX
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.0543109924, 0, 0.103222892, 0)
 MainFrame.Size = UDim2.new(0, 689, 0, 320)
-MainFrame.Visible = true
 
-bar.Name = "bar"
-bar.Parent = MainFrame
-bar.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-bar.BackgroundTransparency = 0.800
-bar.BorderSizePixel = 0
-bar.Position = UDim2.new(-0, 0, -0.00296382909, 0)
-bar.Size = UDim2.new(0, 689, 0, 25)
+UICorner.Parent = MainFrame
 
-synminbutt.Name = "synminbutt"
-synminbutt.Parent = SynapseXreal
-synminbutt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-synminbutt.BackgroundTransparency = 1.000
-synminbutt.Position = UDim2.new(300, 0, 10, 0)
-synminbutt.Size = UDim2.new(0, 40, 0, 30)
-synminbutt.Visible = false
-synminbutt.ZIndex = 14
-synminbutt.Image = "http://www.roblox.com/asset/?id=7641125882"
-synminbutt.ImageRectSize = Vector2.new(138, 167)
-synminbutt.MouseButton1Click:Connect(function()
-	MainFrame.Visible = true
-	synminbutt.Visible = false
-end)
+Bar.Name = "Bar"
+Bar.Parent = MainFrame
+Bar.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Bar.BackgroundTransparency = 0.800
+Bar.BorderSizePixel = 0
+Bar.Position = UDim2.new(-0, 0, -0.00296382909, 0)
+Bar.Size = UDim2.new(0, 689, 0, 25)
+
+UICorner_2.Parent = Bar
 
 Close.Name = "Close"
-Close.Parent = bar
+Close.Parent = Bar
 Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Close.BackgroundTransparency = 1.000
 Close.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Close.BorderSizePixel = 0
-Close.Position = UDim2.new(0.965521046, 0, 0.07, 0)
+Close.Position = UDim2.new(0.965521038, 0, 0.0700000003, 0)
 Close.Size = UDim2.new(0, 21, 0, 25)
 Close.Font = Enum.Font.Arial
 Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 14.000
-Close.MouseButton1Click:Connect(function()
-	SynapseXreal:Destroy()
-end)
 
 Mini.Name = "Mini"
-Mini.Parent = bar
+Mini.Parent = Bar
 Mini.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Mini.BackgroundTransparency = 1.000
 Mini.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Mini.BorderSizePixel = 0
-Mini.Position = UDim2.new(0.905521046, 0, 0.01, 0)
+Mini.Position = UDim2.new(0.905521035, 0, 0.00999999978, 0)
 Mini.Size = UDim2.new(0, 21, 0, 25)
 Mini.Font = Enum.Font.Arial
 Mini.Text = "_"
 Mini.TextColor3 = Color3.fromRGB(255, 255, 255)
 Mini.TextSize = 14.000
-Mini.MouseButton1Click:Connect(function()
-	Notification:Notify({
-		Title = "Synapse X - 1.0.0 (Beta)",
-		Description = "Minimized."},
-	{OutlineColor = Color3.fromRGB(219, 69, 39),
-		Time = 5,
-		Type = "image"},
-	{Image = "http://www.roblox.com/asset/?id=7641125882",
-		ImageColor = Color3.fromRGB(219, 69, 39)
-	})
-	synminbutt.Visible = true
-	MainFrame.Visible = false
-end)
 
 Min.Name = "Min"
-Min.Parent = bar
+Min.Parent = Bar
 Min.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Min.BackgroundTransparency = 1.000
 Min.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Min.BorderSizePixel = 0
-Min.Position = UDim2.new(0.935521046, 0, 0.07, 0)
+Min.Position = UDim2.new(0.935521066, 0, 0.0700000003, 0)
 Min.Size = UDim2.new(0, 21, 0, 25)
 Min.Font = Enum.Font.Arial
 Min.Text = "M"
 Min.TextColor3 = Color3.fromRGB(255, 255, 255)
 Min.TextSize = 14.000
-Min.MouseButton1Click:Connect(function()
-	Notification:Notify({
-		Title = "Synapse X - 1.0.0 (Beta)",
-		Description = "Press F6 to show the menu."},
-	{OutlineColor = Color3.fromRGB(219, 69, 39),
-		Time = 5,
-		Type = "image"},
-	{Image = "http://www.roblox.com/asset/?id=0",
-		ImageColor = Color3.fromRGB(219, 69, 39)
-	})
-	MainFrame.Visible = false
-	synminbutt.Visible = false
-end)
 
 ImageLabel.Parent = MainFrame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
@@ -194,21 +136,52 @@ NewTab.Name = "NewTab"
 NewTab.Parent = Tabs
 NewTab.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 NewTab.BorderSizePixel = 0
-NewTab.Position = UDim2.new(0, 0, -0.0659999996, 0)
+NewTab.Position = UDim2.new(0.144999996, 0, -0.0610000007, 0)
 NewTab.Size = UDim2.new(0, 14, 0, 14)
 NewTab.Font = Enum.Font.SourceSans
 NewTab.Text = "+"
 NewTab.TextColor3 = Color3.fromRGB(255, 255, 255)
 NewTab.TextSize = 14.000
 
-security.Name = "security"
-security.Parent = ImageLabel
-security.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-security.Size = UDim2.new(0, 552, 0, 258)
-security.Visible = false
-security.Font = Enum.Font.SourceSans
-security.TextColor3 = Color3.fromRGB(0, 0, 0)
-security.TextSize = 14.000
+UICorner_3.Parent = NewTab
+
+Tab_1.Name = "Tab_1"
+Tab_1.Parent = Tabs
+
+ScriptTitle.Name = "ScriptTitle"
+ScriptTitle.Parent = Tab_1
+ScriptTitle.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+ScriptTitle.BorderSizePixel = 0
+ScriptTitle.Position = UDim2.new(0, 0, -0.074000001, 0)
+ScriptTitle.Size = UDim2.new(0, 55, 0, 19)
+ScriptTitle.Font = Enum.Font.SourceSans
+ScriptTitle.Text = "Script 1"
+ScriptTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptTitle.TextSize = 15.000
+
+UICorner_4.Parent = ScriptTitle
+
+RemoveTab.Name = "RemoveTab"
+RemoveTab.Parent = Tab_1
+RemoveTab.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+RemoveTab.BorderSizePixel = 0
+RemoveTab.Position = UDim2.new(0.109999999, 0, -0.0610000007, 0)
+RemoveTab.Size = UDim2.new(0, 14, 0, 14)
+RemoveTab.Font = Enum.Font.SourceSans
+RemoveTab.Text = "x"
+RemoveTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveTab.TextSize = 14.000
+
+UICorner_5.Parent = RemoveTab
+
+Security.Name = "Security"
+Security.Parent = ImageLabel
+Security.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Security.Size = UDim2.new(0, 552, 0, 258)
+Security.Visible = false
+Security.Font = Enum.Font.SourceSans
+Security.TextColor3 = Color3.fromRGB(0, 0, 0)
+Security.TextSize = 14.000
 
 EditorFrame.Name = "EditorFrame"
 EditorFrame.Parent = ImageLabel
@@ -216,6 +189,7 @@ EditorFrame.Active = true
 EditorFrame.BackgroundColor3 = Color3.fromRGB(37, 37, 37)
 EditorFrame.BackgroundTransparency = 1.000
 EditorFrame.BorderColor3 = Color3.fromRGB(61, 61, 61)
+EditorFrame.BorderSizePixel = 0
 EditorFrame.Size = UDim2.new(1, 0, 1, 0)
 EditorFrame.ZIndex = 3
 EditorFrame.BottomImage = "rbxassetid://148970562"
@@ -224,21 +198,20 @@ EditorFrame.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
 EditorFrame.MidImage = "rbxassetid://148970562"
 EditorFrame.ScrollBarThickness = 5
 EditorFrame.TopImage = "rbxassetid://148970562"
-EditorFrame.BorderSizePixel = 0
 
 Source.Name = "Source"
 Source.Parent = EditorFrame
 Source.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Source.BackgroundTransparency = 1.000
-Source.Position = UDim2.new(0, 30, 0, 0)
 Source.BorderSizePixel = 0
+Source.Position = UDim2.new(0, 30, 0, 0)
 Source.Size = UDim2.new(0.945652187, 0, 1, 0)
 Source.ZIndex = 3
 Source.ClearTextOnFocus = false
 Source.Font = Enum.Font.Code
 Source.MultiLine = true
+Source.PlaceholderColor3 = Color3.fromRGB(204, 204, -2)
 Source.ShowNativeInput = false
-Source.PlaceholderColor3 = Color3.fromRGB(204, 204, 2-4)
 Source.Text = ""
 Source.TextColor3 = Color3.fromRGB(204, 204, 204)
 Source.TextSize = 15.000
@@ -343,154 +316,126 @@ Lines.BackgroundTransparency = 1.000
 Lines.Size = UDim2.new(0, 30, 1, 0)
 Lines.ZIndex = 4
 Lines.Font = Enum.Font.Code
-Lines.Text = "1"
+Lines.Text = "1\\n"
 Lines.TextColor3 = Color3.fromRGB(255, 255, 255)
 Lines.TextSize = 15.000
 Lines.TextYAlignment = Enum.TextYAlignment.Top
 
-title.Name = "title"
-title.Parent = MainFrame
-title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(0.330062926, 0, 0.00625000056, 0)
-title.Size = UDim2.new(0, 200, 0, 22)
-title.Font = Enum.Font.SourceSans
-title.Text = "Synapse X - 1.0.0 (Beta)"
-title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextSize = 16.000
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.330062926, 0, 0.00625000056, 0)
+Title.Size = UDim2.new(0, 200, 0, 22)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "Synapse X - Unknown"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 16.000
 
-list.Name = "list"
-list.Parent = MainFrame
-list.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-list.BorderSizePixel = 0
-list.Position = UDim2.new(0.820970535, 0, 0.100000001, 0)
-list.Size = UDim2.new(0, 114, 0, 246)
+List.Name = "List"
+List.Parent = MainFrame
+List.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+List.BorderSizePixel = 0
+List.Position = UDim2.new(0.820970535, 0, 0.100000001, 0)
+List.Size = UDim2.new(0, 114, 0, 246)
 
-execute.Name = "execute"
-execute.Parent = MainFrame
-execute.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-execute.BackgroundTransparency = 0.800
-execute.BorderSizePixel = 0
-execute.Position = UDim2.new(0.0095389355, 0, 0.887499988, 0)
-execute.Size = UDim2.new(0, 92, 0, 30)
-execute.Font = Enum.Font.Arial
-execute.Text = "Execute"
-execute.TextColor3 = Color3.fromRGB(255, 255, 255)
-execute.TextSize = 14.000
-execute.MouseButton1Click:Connect(function()
-	if injected == true then
-		loadstring(Source.Text)()
-	end
-	if injected == false then
-		title.Text = "Synapse X - 1.0.0 (Beta) (Not injected! Press inject!)"
-	end
-end)
+UICorner_6.Parent = List
 
-clear.Name = "clear"
-clear.Parent = MainFrame
-clear.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-clear.BackgroundTransparency = 0.800
-clear.BorderSizePixel = 0
-clear.Position = UDim2.new(0.154146105, 0, 0.887499988, 0)
-clear.Size = UDim2.new(0, 84, 0, 30)
-clear.Font = Enum.Font.Arial
-clear.Text = "Clear"
-clear.TextColor3 = Color3.fromRGB(255, 255, 255)
-clear.TextSize = 14.000
-clear.MouseButton1Click:Connect(function()
-	Source.Text = ""
-end)
+Execute.Name = "Execute"
+Execute.Parent = MainFrame
+Execute.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+Execute.BackgroundTransparency = 0.800
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0095389355, 0, 0.887499988, 0)
+Execute.Size = UDim2.new(0, 92, 0, 30)
+Execute.Font = Enum.Font.Arial
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 14.000
 
-scripthub.Name = "scripthub"
-scripthub.Parent = MainFrame
-scripthub.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-scripthub.BackgroundTransparency = 0.800
-scripthub.BorderSizePixel = 0
-scripthub.Position = UDim2.new(0.871768773, 0, 0.887499988, 0)
-scripthub.Size = UDim2.new(0, 79, 0, 30)
-scripthub.Font = Enum.Font.Arial
-scripthub.Text = "Script Hub"
-scripthub.TextColor3 = Color3.fromRGB(255, 255, 255)
-scripthub.TextSize = 14.000
-scripthub.MouseButton1Click:Connect(function()
-	if scripthub_2.Visible == true then
-		scripthub_2.Visible = false
-	elseif scripthub_2.Visible == false then
-		scripthub_2.Visible = true
-	end
-end)
+UICorner_7.Parent = Execute
 
-Attach.Name = "Inject"
-Attach.Parent = MainFrame
-Attach.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-Attach.BackgroundTransparency = 0.800
-Attach.BorderSizePixel = 0
-Attach.Position = UDim2.new(0.741144657, 0, 0.887499988, 0)
-Attach.Size = UDim2.new(0, 84, 0, 30)
-Attach.Font = Enum.Font.Arial
-Attach.Text = "Inject"
-Attach.TextColor3 = Color3.fromRGB(255, 255, 255)
-Attach.TextSize = 14.000
-Attach.MouseButton1Click:Connect(function()
-	if injected == true then
-		title.Text = "Synapse X - 1.0.0 (Beta) (Already injected!)"
-		wait(1)
-		title.Text = "Synapse X - 1.0.0 (Beta)"
-	end
-	if injected == false then
-		title.Text = "Synapse X - 1.0.0 (Beta) (Checking...)"
-		wait(0.1)
-		title.Text = "Synapse X - 1.0.0 (Beta) (Injecting...)"
-		wait(1.5)
-		title.Text = "Synapse X - 1.0.0 (Beta) (Checking Whitelist...)"
-		wait(0.8)
-		title.Text = "Synapse X - 1.0.0 (Beta) (Scanning...)"
-		wait(0.3)
-		title.Text = "Synapse X - 1.0.0 (Beta) (Ready!)"
-		wait(0.5)
-		title.Text = "Synapse X - 1.0.0 (Beta)"
-		injected = true
-	end
-end)
+Clear.Name = "Clear"
+Clear.Parent = MainFrame
+Clear.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+Clear.BackgroundTransparency = 0.800
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.154146105, 0, 0.887499988, 0)
+Clear.Size = UDim2.new(0, 84, 0, 30)
+Clear.Font = Enum.Font.Arial
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 14.000
 
-title_2.Name = "title"
-title_2.Parent = MainFrame
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
-title_2.Size = UDim2.new(0, 18, 0, 24)
-title_2.ZIndex = 14
-title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
-title_2.ImageRectSize = Vector2.new(138, 167)
+UICorner_8.Parent = Clear
 
-scripthub_2.Name = "scripthub"
-scripthub_2.Parent = SynapseXreal
-scripthub_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-scripthub_2.BorderSizePixel = 0
-scripthub_2.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
-scripthub_2.Size = UDim2.new(0, 290, 0, 305)
-scripthub_2.Visible = false
-scripthub_2.ZIndex = 100
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = MainFrame
+ScriptHub.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+ScriptHub.BackgroundTransparency = 0.800
+ScriptHub.BorderSizePixel = 0
+ScriptHub.Position = UDim2.new(0.871768773, 0, 0.887499988, 0)
+ScriptHub.Size = UDim2.new(0, 79, 0, 30)
+ScriptHub.Font = Enum.Font.Arial
+ScriptHub.Text = "Script Hub"
+ScriptHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptHub.TextSize = 14.000
 
-optionspage.Name = "optionspage"
-optionspage.Parent = SynapseXreal
-optionspage.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-optionspage.BorderSizePixel = 0
-optionspage.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
-optionspage.Size = UDim2.new(0, 290, 0, 305)
-optionspage.Visible = false
-optionspage.ZIndex = 100
+UICorner_9.Parent = ScriptHub
 
-bar_2.Name = "bar"
-bar_2.Parent = scripthub_2
-bar_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-bar_2.BackgroundTransparency = 0.800
-bar_2.BorderSizePixel = 0
-bar_2.Position = UDim2.new(0, 0, -0.0029638072, 0)
-bar_2.Size = UDim2.new(0, 290, 0, 25)
+Inject.Name = "Inject"
+Inject.Parent = MainFrame
+Inject.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+Inject.BackgroundTransparency = 0.800
+Inject.BorderSizePixel = 0
+Inject.Position = UDim2.new(0.741144657, 0, 0.887499988, 0)
+Inject.Size = UDim2.new(0, 84, 0, 30)
+Inject.Font = Enum.Font.Arial
+Inject.Text = "Inject"
+Inject.TextColor3 = Color3.fromRGB(255, 255, 255)
+Inject.TextSize = 14.000
+
+UICorner_10.Parent = Inject
+
+Logo.Name = "Logo"
+Logo.Parent = MainFrame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.00870821718, 0, 0, 0)
+Logo.Size = UDim2.new(0, 18, 0, 24)
+Logo.ZIndex = 14
+Logo.Image = "http://www.roblox.com/asset/?id=7641125882"
+Logo.ImageRectSize = Vector2.new(138, 167)
+
+SynapseXButton.Name = "SynapseXButton"
+SynapseXButton.Parent = SynapseX
+SynapseXButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SynapseXButton.BackgroundTransparency = 1.000
+SynapseXButton.Size = UDim2.new(0, 24, 0, 28)
+SynapseXButton.Visible = false
+SynapseXButton.ZIndex = 14
+SynapseXButton.Image = "http://www.roblox.com/asset/?id=7641125882"
+SynapseXButton.ImageRectSize = Vector2.new(138, 167)
+
+ScriptHub_2.Name = "ScriptHub"
+ScriptHub_2.Parent = SynapseX
+ScriptHub_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+ScriptHub_2.BorderSizePixel = 0
+ScriptHub_2.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
+ScriptHub_2.Size = UDim2.new(0, 290, 0, 305)
+ScriptHub_2.Visible = false
+ScriptHub_2.ZIndex = 100
+
+bar.Name = "bar"
+bar.Parent = ScriptHub_2
+bar.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+bar.BackgroundTransparency = 0.800
+bar.BorderSizePixel = 0
+bar.Position = UDim2.new(0, 0, -0.0029638072, 0)
+bar.Size = UDim2.new(0, 290, 0, 25)
 
 select.Name = "select"
-select.Parent = scripthub_2
+select.Parent = ScriptHub_2
 select.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
 select.BorderSizePixel = 0
 select.Position = UDim2.new(0.0299979374, 0, 0.104918033, 0)
@@ -505,15 +450,12 @@ dex.BorderColor3 = Color3.fromRGB(0, 0, 49)
 dex.BorderSizePixel = 0
 dex.Position = UDim2.new(0.0121960752, 0, -1.49011612e-08, 0)
 dex.Size = UDim2.new(0, 80, 0, 18)
+dex.ZIndex = 110
 dex.Font = Enum.Font.SourceSans
 dex.Text = " Dark Dex"
 dex.TextColor3 = Color3.fromRGB(255, 255, 255)
 dex.TextSize = 14.000
 dex.TextXAlignment = Enum.TextXAlignment.Left
-dex.ZIndex = 110
-dex.MouseButton1Click:Connect(function()
-	scriptselected = "dex"
-end)
 
 esp.Name = "esp"
 esp.Parent = select
@@ -523,15 +465,12 @@ esp.BorderColor3 = Color3.fromRGB(0, 0, 49)
 esp.BorderSizePixel = 0
 esp.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
 esp.Size = UDim2.new(0, 80, 0, 18)
+esp.ZIndex = 110
 esp.Font = Enum.Font.SourceSans
 esp.Text = " Unnamed ESP"
 esp.TextColor3 = Color3.fromRGB(255, 255, 255)
 esp.TextSize = 14.000
 esp.TextXAlignment = Enum.TextXAlignment.Left
-esp.ZIndex = 110
-esp.MouseButton1Click:Connect(function()
-	scriptselected = "esp"
-end)
 
 spy.Name = "spy"
 spy.Parent = select
@@ -541,15 +480,12 @@ spy.BorderColor3 = Color3.fromRGB(0, 0, 49)
 spy.BorderSizePixel = 0
 spy.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
 spy.Size = UDim2.new(0, 80, 0, 18)
+spy.ZIndex = 110
 spy.Font = Enum.Font.SourceSans
 spy.Text = "Aimbot/Esp"
 spy.TextColor3 = Color3.fromRGB(255, 255, 255)
 spy.TextSize = 14.000
 spy.TextXAlignment = Enum.TextXAlignment.Left
-spy.ZIndex = 110
-spy.MouseButton1Click:Connect(function()
-	scriptselected = "spy"
-end)
 
 dumper.Name = "dumper"
 dumper.Parent = select
@@ -559,15 +495,12 @@ dumper.BorderColor3 = Color3.fromRGB(0, 0, 49)
 dumper.BorderSizePixel = 0
 dumper.Position = UDim2.new(0.0121960752, 0, 0.204545438, 0)
 dumper.Size = UDim2.new(0, 80, 0, 18)
+dumper.ZIndex = 110
 dumper.Font = Enum.Font.SourceSans
 dumper.Text = " SaveInstance"
 dumper.TextColor3 = Color3.fromRGB(255, 255, 255)
 dumper.TextSize = 14.000
 dumper.TextXAlignment = Enum.TextXAlignment.Left
-dumper.ZIndex = 110
-dumper.MouseButton1Click:Connect(function()
-	scriptselected = "dumper"
-end)
 
 backdoor.Name = "backdoor"
 backdoor.Parent = select
@@ -575,112 +508,112 @@ backdoor.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
 backdoor.BackgroundTransparency = 1.000
 backdoor.BorderColor3 = Color3.fromRGB(0, 0, 49)
 backdoor.BorderSizePixel = 0
-backdoor.Position = UDim2.new(0.0121960752, 0, 0.274545438, 0)
+backdoor.Position = UDim2.new(0.0121960752, 0, 0.274545431, 0)
 backdoor.Size = UDim2.new(0, 80, 0, 18)
+backdoor.ZIndex = 110
 backdoor.Font = Enum.Font.SourceSans
 backdoor.Text = " backdoor.exe"
 backdoor.TextColor3 = Color3.fromRGB(255, 255, 255)
 backdoor.TextSize = 14.000
 backdoor.TextXAlignment = Enum.TextXAlignment.Left
-backdoor.ZIndex = 110
-backdoor.MouseButton1Click:Connect(function()
-	scriptselected = "backdoor"
-end)
 
-desc.Name = "desc"
-desc.Parent = scripthub_2
-desc.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-desc.BorderSizePixel = 0
-desc.Position = UDim2.new(0.340342641, 0, 0.613114715, 0)
-desc.Size = UDim2.new(0, 184, 0, 69)
-desc.ZIndex = 110
+Description.Name = "Description"
+Description.Parent = ScriptHub_2
+Description.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Description.BorderSizePixel = 0
+Description.Position = UDim2.new(0.340342641, 0, 0.613114715, 0)
+Description.Size = UDim2.new(0, 184, 0, 69)
+Description.ZIndex = 110
 
-descri.Name = "descri"
-descri.Parent = desc
-descri.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-descri.BackgroundTransparency = 1.000
-descri.BorderSizePixel = 0
-descri.Position = UDim2.new(0.0112334546, 0, 0, 0)
-descri.Size = UDim2.new(0, 181, 0, 69)
-descri.Font = Enum.Font.SourceSans
-descri.Text = ""
-descri.TextColor3 = Color3.fromRGB(255, 255, 255)
-descri.TextSize = 15.000
-descri.TextWrapped = true
-descri.TextXAlignment = Enum.TextXAlignment.Left
-descri.TextYAlignment = Enum.TextYAlignment.Top
-descri.ZIndex = 125
+DescriptionText.Name = "DescriptionText"
+DescriptionText.Parent = Description
+DescriptionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescriptionText.BackgroundTransparency = 1.000
+DescriptionText.BorderSizePixel = 0
+DescriptionText.Position = UDim2.new(0.0112334546, 0, 0, 0)
+DescriptionText.Size = UDim2.new(0, 181, 0, 69)
+DescriptionText.ZIndex = 125
+DescriptionText.Font = Enum.Font.SourceSans
+DescriptionText.Text = ""
+DescriptionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescriptionText.TextSize = 15.000
+DescriptionText.TextWrapped = true
+DescriptionText.TextXAlignment = Enum.TextXAlignment.Left
+DescriptionText.TextYAlignment = Enum.TextYAlignment.Top
+
+title.Name = "title"
+title.Parent = ScriptHub_2
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
+title.Size = UDim2.new(0, 200, 0, 22)
+title.ZIndex = 110
+title.Font = Enum.Font.SourceSans
+title.Text = "Synapse X - 1.0.0 (Beta) Script Hub"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 16.000
+
+Execute_2.Name = "Execute"
+Execute_2.Parent = ScriptHub_2
+Execute_2.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+Execute_2.BackgroundTransparency = 0.800
+Execute_2.BorderSizePixel = 0
+Execute_2.Position = UDim2.new(0.34057343, 0, 0.871106505, 0)
+Execute_2.Size = UDim2.new(0, 92, 0, 30)
+Execute_2.ZIndex = 110
+Execute_2.Font = Enum.Font.Arial
+Execute_2.Text = "Execute"
+Execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute_2.TextSize = 14.000
+
+Close_2.Name = "Close"
+Close_2.Parent = ScriptHub_2
+Close_2.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+Close_2.BackgroundTransparency = 0.800
+Close_2.BorderSizePixel = 0
+Close_2.Position = UDim2.new(0.685180664, 0, 0.871106505, 0)
+Close_2.Size = UDim2.new(0, 84, 0, 30)
+Close_2.ZIndex = 110
+Close_2.Font = Enum.Font.Arial
+Close_2.Text = "Close"
+Close_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close_2.TextSize = 14.000
+
+title_2.Name = "title"
+title_2.Parent = ScriptHub_2
+title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title_2.BackgroundTransparency = 1.000
+title_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
+title_2.Size = UDim2.new(0, 18, 0, 24)
+title_2.ZIndex = 110
+title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
+title_2.ImageRectSize = Vector2.new(138, 167)
+
+UICorner_11.Parent = ScriptHub_2
+
+OptionSpage.Name = "OptionSpage"
+OptionSpage.Parent = SynapseX
+OptionSpage.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+OptionSpage.BorderSizePixel = 0
+OptionSpage.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
+OptionSpage.Size = UDim2.new(0, 290, 0, 305)
+OptionSpage.Visible = false
+OptionSpage.ZIndex = 100
 
 title_3.Name = "title"
-title_3.Parent = scripthub_2
+title_3.Parent = OptionSpage
 title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title_3.BackgroundTransparency = 1.000
 title_3.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
 title_3.Size = UDim2.new(0, 200, 0, 22)
+title_3.ZIndex = 110
 title_3.Font = Enum.Font.SourceSans
-title_3.Text = "Synapse X - 1.0.0 (Beta) Script Hub"
+title_3.Text = "Synapse X - 1.0.0 (Beta) Options Menu"
 title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 title_3.TextSize = 16.000
-title_3.ZIndex = 110
-
-execute_2.Name = "execute"
-execute_2.Parent = scripthub_2
-execute_2.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-execute_2.BackgroundTransparency = 0.800
-execute_2.BorderSizePixel = 0
-execute_2.Position = UDim2.new(0.34057343, 0, 0.871106505, 0)
-execute_2.Size = UDim2.new(0, 92, 0, 30)
-execute_2.Font = Enum.Font.Arial
-execute_2.Text = "Execute"
-execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-execute_2.TextSize = 14.000
-execute_2.ZIndex = 110
-execute_2.MouseButton1Click:Connect(function()
-	if injected == true then
-		if scriptselected == "dex" then
-			loadstring(game:HttpGet("https://pastebin.com/raw/J8AX35Fg"))()
-		end
-		if scriptselected == "spy" then
-			loadstring(game:HttpGet"https://gitlab.com/te4224/Scripts/-/raw/main/Universal%20Aimbot%20N%20Esp/v2/main.lua")();
-		end
-		if scriptselected == "dumper" then
-			saveinstance()
-		end
-		if scriptselected == "esp" then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
-		end
-		if scriptselected == "backdoor" then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
-		end
-		if scriptselected == "none" then
-		end
-	end
-	if injected == false then
-		execute_2.Text = "Not Attached!"
-		wait(1)
-		execute_2.Text = "Execute"
-	end
-end)
-
-close.Name = "close"
-close.Parent = scripthub_2
-close.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-close.BackgroundTransparency = 0.800
-close.BorderSizePixel = 0
-close.Position = UDim2.new(0.685180664, 0, 0.871106505, 0)
-close.Size = UDim2.new(0, 84, 0, 30)
-close.Font = Enum.Font.Arial
-close.Text = "Close"
-close.TextColor3 = Color3.fromRGB(255, 255, 255)
-close.TextSize = 14.000
-close.ZIndex = 110
-close.MouseButton1Click:Connect(function()
-	scriptselected = "none"
-	scripthub_2.Visible = false
-end)
 
 title_4.Name = "title"
-title_4.Parent = scripthub_2
+title_4.Parent = OptionSpage
 title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 title_4.BackgroundTransparency = 1.000
 title_4.Position = UDim2.new(0.00870821718, 0, 0, 0)
@@ -689,72 +622,85 @@ title_4.ZIndex = 110
 title_4.Image = "http://www.roblox.com/asset/?id=7641125882"
 title_4.ImageRectSize = Vector2.new(138, 167)
 
-title_5.Name = "title"
-title_5.Parent = optionspage
-title_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_5.BackgroundTransparency = 1.000
-title_5.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
-title_5.Size = UDim2.new(0, 200, 0, 22)
-title_5.Font = Enum.Font.SourceSans
-title_5.Text = "Synapse X - 1.0.0 (Beta) Options Menu"
-title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_5.TextSize = 16.000
-title_5.ZIndex = 110
-
-title_6.Name = "title"
-title_6.Parent = optionspage
-title_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_6.BackgroundTransparency = 1.000
-title_6.Position = UDim2.new(0.00870821718, 0, 0, 0)
-title_6.Size = UDim2.new(0, 18, 0, 24)
-title_6.ZIndex = 110
-title_6.Image = "http://www.roblox.com/asset/?id=7641125882"
-title_6.ImageRectSize = Vector2.new(138, 167)
-
 synapsex3.Name = "synapsex3"
-synapsex3.Parent = optionspage
+synapsex3.Parent = OptionSpage
 synapsex3.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
 synapsex3.BackgroundTransparency = 0.800
 synapsex3.BorderSizePixel = 0
-synapsex3.Position = UDim2.new(0.30757343, 0, 0.391106505, 0)
+synapsex3.Position = UDim2.new(0.307573438, 0, 0.391106516, 0)
 synapsex3.Size = UDim2.new(0, 123, 0, 30)
+synapsex3.ZIndex = 110
 synapsex3.Font = Enum.Font.Arial
 synapsex3.Text = "Synapse X v3"
 synapsex3.TextColor3 = Color3.fromRGB(255, 255, 255)
 synapsex3.TextSize = 14.000
-synapsex3.ZIndex = 110
-synapsex3.MouseButton1Click:Connect(function()
-	Notification:Notify({
-		Title = "Synapse X - 1.0.0 (Beta)",
-		Description = "Synapse X v3 coming soon."},
-	{OutlineColor = Color3.fromRGB(219, 69, 39),
-		Time = 5,
-		Type = "image"},
-	{Image = "http://www.roblox.com/asset/?id=7641125882",
-		ImageColor = Color3.fromRGB(219, 69, 39)
-	})
-	synapsex3.Text = "Coming soon."
-	wait(1)
-	synapsex3.Text = "Synapse X v3"
-end)
 
--- Scripts:
+UICorner_12.Parent = OptionSpage
 
-game:GetService("UserInputService").InputBegan:Connect(function (input)
-	if MainFrame.Visible == false and synminbutt.Visible == false then
-		if (input.KeyCode == Enum.KeyCode.F6) then
-			MainFrame.Visible = not MainFrame.Visible
-		end
-	end
-end)
+coroutine.wrap(YVPCQ_fake_script)()
+local function TFKNA_fake_script() -- SynapseX.Controller 
+	local script = Instance.new('LocalScript', SynapseX)
 
-local function SYHNK_fake_script() -- ImageLabel.LocalScript 
-	local script = Instance.new('LocalScript', ImageLabel)
-	local lua_keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
-	local global_env = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
-	local Source = script.Parent.EditorFrame.Source
-	local scrollframe = script.Parent.EditorFrame
+	local SynapseXVerison = "4.5.8"
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local MainFrame = script.Parent.MainFrame
+	local OptionSpage = script.Parent.OptionSpage
+	local ScriptHub = script.Parent.ScriptHub
+	local ScriptHubButton = MainFrame.ScriptHub
+	local SynapseXButton = script.Parent.SynapseXButton
+	local Lua_Keywords = {"and", "break", "do", "else", "elseif", "end", "false", "for", "function", "goto", "if", "in", "local", "nil", "not", "or", "repeat", "return", "then", "true", "until", "while"}
+	local Global_Env = {"getrawmetatable", "game", "workspace", "script", "math", "string", "table", "print", "wait", "BrickColor", "Color3", "next", "pairs", "ipairs", "select", "unpack", "Instance", "Vector2", "Vector3", "CFrame", "Ray", "UDim2", "Enum", "assert", "error", "warn", "tick", "loadstring", "_G", "shared", "getfenv", "setfenv", "newproxy", "setmetatable", "getmetatable", "os", "debug", "pcall", "ypcall", "xpcall", "rawequal", "rawset", "rawget", "tonumber", "tostring", "type", "typeof", "_VERSION", "coroutine", "delay", "require", "spawn", "LoadLibrary", "settings", "stats", "time", "UserSettings", "version", "Axes", "ColorSequence", "Faces", "ColorSequenceKeypoint", "NumberRange", "NumberSequence", "NumberSequenceKeypoint", "gcinfo", "elapsedTime", "collectgarbage", "PhysicalProperties", "Rect", "Region3", "Region3int16", "UDim", "Vector2int16", "Vector3int16"}
+	local Source = MainFrame.ImageLabel.EditorFrame.Source
+	local ScrollFrame = MainFrame.ImageLabel.EditorFrame
 	local Lines = Source.Parent.Lines
+	local CloseScriptHub = ScriptHub.Close
+	local DescriptionText = ScriptHub.Description.DescriptionText
+	local Attach = MainFrame.Inject
+	local ExecuteScriptHub = ScriptHub.Execute
+	local Execute = MainFrame.Execute
+	local Title = MainFrame.Title
+	local Clear = MainFrame.Clear
+	
+	local CurrentTab
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local dragging2
+	local dragInput2
+	local dragStart2
+	local startPos2
+	
+	local dragging4
+	local dragInput4
+	local dragStart4
+	local startPos4
+	
+	local dragging5
+	local dragInput5
+	local dragStart5
+	local startPos5
+	
+	local ScriptSelected = "None"
+	local Injected = false
+	
+	--Synapse Set Verison Controller
+	
+	Title.Text = "Synapse X - "..SynapseXVerison
+	
+	--Synapse X Button Controller
+	
+	SynapseXButton.MouseButton1Click:Connect(function()
+		MainFrame.Visible = true
+		SynapseXButton.Visible = false
+	end)
+	
+	--Synapse X ImageLabel Controller
+	
 	local Highlight = function(string, keywords)
 		local K = {}
 		local S = string
@@ -832,7 +778,7 @@ local function SYHNK_fake_script() -- ImageLabel.LocalScript
 		end)
 		return A
 	end
-
+	
 	local strings = function(string)
 		local highlight = ""
 		local quote = false
@@ -896,8 +842,8 @@ local function SYHNK_fake_script() -- ImageLabel.LocalScript
 			Source.Text = Source.Text:gsub("\13", "")
 			Source.Text = Source.Text:gsub("\t", "      ")
 			local s = Source.Text
-			Source.Keywords_.Text = Highlight(s, lua_keywords)
-			Source.Globals_.Text = Highlight(s, global_env)
+			Source.Keywords_.Text = Highlight(s, Lua_Keywords)
+			Source.Globals_.Text = Highlight(s, Global_Env)
 			Source.RemoteHighlight_.Text = Highlight(s, {"FireServer", "fireServer", "InvokeServer", "invokeServer"})
 			Source.Tokens_.Text = hTokens(s)
 			Source.Numbers_.Text = numbers(s)
@@ -916,38 +862,27 @@ local function SYHNK_fake_script() -- ImageLabel.LocalScript
 	Source.Changed:Connect(highlight_source)
 	Source:GetPropertyChangedSignal("Text"):Connect(function()
 		local count = 1
-
+	
 		Source.Text:gsub("\n", function()
 			count = count + 1
 		end)
-		scrollframe.CanvasSize = UDim2.new(0, 1500, count/16.6, 0)
+		ScrollFrame.CanvasSize = UDim2.new(0, 1500, count/16.6, 0)
 		Source.Size = UDim2.new(0, 598, 0, 249 + (count > 16 and 16*(count-16) or 0))
 	end)
-end
-coroutine.wrap(SYHNK_fake_script)()
-local function AMNA_fake_script() -- MainFrame.Dragging 
-	local script = Instance.new('LocalScript', MainFrame)
-
-	local UserInputService = game:GetService("UserInputService")
-
-	local gui = script.Parent
-
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-
+	
+	--Synapse X Main Frame Controller
+	
 	local function update(input)
 		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		MainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
-
-	gui.InputBegan:Connect(function(input)
+	
+	MainFrame.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
-			startPos = gui.Position
-
+			startPos = MainFrame.Position
+	
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -955,181 +890,45 @@ local function AMNA_fake_script() -- MainFrame.Dragging
 			end)
 		end
 	end)
-
-	gui.InputChanged:Connect(function(input)
+	
+	MainFrame.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
-
+	
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			update(input)
 		end
 	end)
-end
-coroutine.wrap(AMNA_fake_script)()
-local function VEUJFP_fake_script() -- scripthub_2.Dragging 
-	local script = Instance.new('LocalScript', scripthub_2)
-
-	local UserInputService = game:GetService("UserInputService")
-
-	local gui = script.Parent
-
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(VEUJFP_fake_script)()
-local function AKJCSK_fake_script() -- optionspage.Dragging 
-	local script = Instance.new('LocalScript', optionspage)
-
-	local UserInputService = game:GetService("UserInputService")
-
-	local gui = script.Parent
-
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(AKJCSK_fake_script)()
-local function VJHASD_fake_script() -- synminbutt.Dragging 
-	local script = Instance.new('LocalScript', synminbutt)
-
-	local UserInputService = game:GetService("UserInputService")
-
-	local gui = script.Parent
-
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(VJHASD_fake_script)()
-local function QQFYV_fake_script() -- tabs.Tabs 
-	local script = Instance.new("LocalScript", Tabs)
-
-	local currentTab
-
-	local function getTabs()
+	
+	--Synapse X Tabs Controller
+	
+	--[[local function getTabs()
 		local tabs = {}
-		for _, v in pairs(script.Parent:GetChildren()) do
+		for _, v in pairs(MainFrame.ImageLabel.Tabs:GetChildren()) do
 			if v.Name:match("Tab_%d+") then
 				tabs[#tabs + 1] = v
 			end
 		end
 		return tabs
 	end
-
+	
 	local function showTab(tab)
-		currentTab = tab
+		CurrentTab = tab
 		if not tab then
-			script.Parent.Parent.EditorFrame.Source.Text = ""
+			MainFrame.ImageLabel.EditorFrame.Source.Text = ""
 			return
 		end
 		tab.ScriptTitle.Size = UDim2.new(0,55,0,19)
 		tab.ScriptTitle.Position = UDim2.new(tab.ScriptTitle.Position.X.Scale, 0, -0.074, 0)
 		tab.RemoveTab.Size = UDim2.new(0, 19, 0, 19)
 		tab.RemoveTab.Position = UDim2.new(tab.RemoveTab.Position.X.Scale, 0, -0.074, 0)
-
-		script.Parent.Parent.EditorFrame.Source.Text = tostring(tab.Script.Value)
+	
+		MainFrame.ImageLabel.EditorFrame.Source.Text = tostring(tab.Script.Value)
 		for i, v in pairs(getTabs()) do
-			if v ~= currentTab then
+			if v ~= CurrentTab then
 				v.ScriptTitle.Size = UDim2.new(0, 45, 0, 17)
 				v.ScriptTitle.Position = UDim2.new(v.ScriptTitle.Position.X.Scale, 0, -0.066, 0)
 				v.RemoveTab.Size = UDim2.new(0, 24, 0, 17)
@@ -1147,105 +946,317 @@ local function QQFYV_fake_script() -- tabs.Tabs
 				table.remove(tabs, i)
 			end
 		end
-
+	
 		local lastTab do
 			if #tabs > 0 then
 				lastTab = tabs[#tabs]
 			end
 		end
-
+	
 		for i, v in pairs(tabs) do
 			v.ScriptTitle.Position = tabs[i - 1] and UDim2.new(tabs[i - 1].ScriptTitle.Position.X.Scale + 0.103, 0, -0.074, 0) or UDim2.new(0, 0, -0.074, 0)
 			v.RemoveTab.Position = UDim2.new(v.ScriptTitle.Position.X.Scale + 0.067, 0, -0.074, 0)
 		end
-
-		script.Parent.NewTab.Position = lastTab and lastTab.RemoveTab.Position + UDim2.new(0.046, 0, 0.008, 0) or UDim2.new(0, 0, -0.066, 0)
-		showTab(currentTab ~= tab and currentTab or tabs[idx] or tabs[idx - 1])
+	
+		MainFrame.ImageLabel.Tabs.NewTab.Position = lastTab and lastTab.RemoveTab.Position + UDim2.new(0.046, 0, 0.008, 0) or UDim2.new(0, 0, -0.066, 0)
+		showTab(CurrentTab ~= tab and CurrentTab or tabs[idx] or tabs[idx - 1])
 	end
-
+	
 	local function newTab()
 		local tabs = getTabs()
-		local tab = Instance.new("Folder", script.Parent)
-		local titlescript = Instance.new("TextButton", tab)
-		local remove = Instance.new("TextButton", tab)
-		local tabScript = Instance.new("StringValue", tab)
+	
+		local NewTab = Instance.new("TextButton")
+		local Round_1 = Instance.new("UICorner")
+		local Tab = Instance.new("Folder")
+		local ScriptTitle = Instance.new("TextButton")
+		local Round_2 = Instance.new("UICorner")
+		local RemoveTab = Instance.new("TextButton")
+		local Round_4 = Instance.new("UICorner")
+		local Script = Instance.new("StringValue")
+		
+		Tab.Parent = MainFrame.ImageLabel
+		
+		NewTab.Name = "NewTab"
+		NewTab.Parent = Tab
+		NewTab.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+		NewTab.BorderSizePixel = 0
+		NewTab.Position = UDim2.new(0.144999996, 0, -0.0610000007, 0)
+		NewTab.Size = UDim2.new(0, 14, 0, 14)
+		NewTab.Font = Enum.Font.SourceSans
+		NewTab.Text = "+"
+		NewTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+		NewTab.TextSize = 14.000
+	
+		Round_1.Parent = NewTab
+	
+		ScriptTitle.Name = "ScriptTitle"
+		ScriptTitle.Parent = Tab
+		ScriptTitle.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+		ScriptTitle.BorderSizePixel = 0
+		ScriptTitle.Position = UDim2.new(0, 0, -0.074000001, 0)
+		ScriptTitle.Size = UDim2.new(0, 55, 0, 19)
+		ScriptTitle.Font = Enum.Font.SourceSans
+		ScriptTitle.Text = "Script 1"
+		ScriptTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+		ScriptTitle.TextSize = 15.000
+	
+		Round_2.Parent = ScriptTitle
+	
+		RemoveTab.Name = "RemoveTab"
+		RemoveTab.Parent = Tab
+		RemoveTab.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+		RemoveTab.BorderSizePixel = 0
+		RemoveTab.Position = UDim2.new(0.109999999, 0, -0.0610000007, 0)
+		RemoveTab.Size = UDim2.new(0, 14, 0, 14)
+		RemoveTab.Font = Enum.Font.SourceSans
+		RemoveTab.Text = "x"
+		RemoveTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+		RemoveTab.TextSize = 14.000
+	
+		Round_4.Parent = RemoveTab
+		
+		Script.Name = "Script"
+		Script.Parent = Tab
+		
 		local lastTab do
 			if #tabs > 0 then
 				lastTab = tabs[#tabs]
 			end
 		end
-
-		tab.Name = ("Tab_%d"):format(#tabs + 1)
-
-		titlescript.Name = "ScriptTitle"
-		titlescript.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-		titlescript.BorderSizePixel = 0
-		titlescript.Position = lastTab and UDim2.new(lastTab.ScriptTitle.Position.X.Scale + 0.103, 0, -0.074, 0) or UDim2.new(0, 0, -0.074, 0)
-		titlescript.Size = UDim2.new(0, 44,0, 19)
-		titlescript.Font = Enum.Font.SourceSans
-		titlescript.TextColor3 = Color3.fromRGB(255, 255, 255)
-		titlescript.TextSize = 15
-		titlescript.Text = ("Script %d"):format(#tabs + 1)
-
-		remove.Name = "RemoveTab"
-		remove.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-		remove.BorderSizePixel = 0
-		remove.Position = UDim2.new(titlescript.Position.X.Scale + 0.067, 0, -0.074, 0)
-		remove.Size = UDim2.new(0, 24, 0, 19)
-		remove.Font = Enum.Font.SourceSans
-		remove.TextColor3 = Color3.fromRGB(255, 255, 255)
-		remove.TextSize = 14
-		remove.Text = "x"
-
-		tabScript.Name = "Script"
-
-		script.Parent.NewTab.Position = remove.Position + UDim2.new(0.046, 0, 0.008, 0)
-
-		showTab(tab)
-
-		titlescript.MouseButton1Click:Connect(function()
-			showTab(tab)
+	
+		Tab.Name = ("Tab_%d"):format(#tabs + 1)
+		
+		MainFrame.ImageLabel.Tabs.NewTab.Position = RemoveTab.Position + UDim2.new(0.046, 0, 0.008, 0)
+		MainFrame.ImageLabel.Tabs:WaitForChild(("Tab_%d"):format(#tabs + 1)).RemoveTab.Position = NewTab.Position + UDim2.new(0.046, 0, 0.008, 0)
+		MainFrame.ImageLabel.Tabs:WaitForChild(("Tab_%d"):format(#tabs + 1)).ScriptTitle.Position = RemoveTab.Position + UDim2.new(0.046, 0, 0.008, 0)
+		showTab(Tab)
+	
+		ScriptTitle.MouseButton1Click:Connect(function()
+			showTab(Tab)
 		end)
-		remove.MouseButton1Click:Connect(function()
-			removeTab(tab)
+		RemoveTab.MouseButton1Click:Connect(function()
+			removeTab(Tab)
 		end)
-
-		return tab
+	
+		return Tab
 	end
-
-	currenTab = newTab()
-
-	showTab(currentTab)
-
-	script.Parent.NewTab.MouseButton1Click:Connect(function()
+	
+	CurrentTab = newTab()
+	
+	showTab(CurrentTab)
+	
+	MainFrame.ImageLabel.Tabs.NewTab.MouseButton1Click:Connect(function()
 		newTab()
 	end)
-
-	script.Parent.Parent.EditorFrame.Source:GetPropertyChangedSignal("Text"):Connect(function()
-		currentTab.Script.Value = script.Parent.Parent.EditorFrame.Source.Text
+	
+	MainFrame.ImageLabel.EditorFrame.Source:GetPropertyChangedSignal("Text"):Connect(function()
+		CurrentTab.Script.Value = MainFrame.ImageLabel.EditorFrame.Source.Text
+	end)]]
+	
+	--Synapse X Option Spage Controller
+	
+	local function update2(input)
+		local delta = input.Position - dragStart2
+		OptionSpage.Position = UDim2.new(startPos2.X.Scale, startPos2.X.Offset + delta.X, startPos2.Y.Scale, startPos2.Y.Offset + delta.Y)
+	end
+	
+	OptionSpage.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging2 = true
+			dragStart2 = input.Position
+			startPos2 = OptionSpage.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging2 = false
+				end
+			end)
+		end
 	end)
-end
-coroutine.wrap(QQFYV_fake_script)()
-while true do
-	wait(0.01)
-	if scripthub_2.Visible == true then
-		if scriptselected == "none" then
-			descri.Text = ""
+	
+	OptionSpage.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput2 = input
 		end
-		if scriptselected == "dex" then
-			descri.Text = "A version of the popular Dex explorer with patches specifically for Synapse X."
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput2 and dragging2 then
+			update2(input)
 		end
-		if scriptselected == "esp" then
-			descri.Text = "ESP Made by ic3w0lf using the Drawing API."
+	end)
+	
+	--Synapse X Button Controller 2
+	
+	local function update4(input)
+		local delta = input.Position - dragStart4
+		SynapseXButton.Position = UDim2.new(startPos4.X.Scale, startPos4.X.Offset + delta.X, startPos4.Y.Scale, startPos4.Y.Offset + delta.Y)
+	end
+	
+	SynapseXButton.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging4 = true
+			dragStart4 = input.Position
+			startPos4 = SynapseXButton.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging4 = false
+				end
+			end)
 		end
-		if scriptselected == "spy" then
-			descri.Text = "Aimbot/Esp Credits in script."
+	end)
+	
+	SynapseXButton.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput4 = input
 		end
-		if scriptselected == "dumper" then
-			descri.Text = "Dumps the place as a .rbxl file in your workspace folder."
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput4 and dragging4 then
+			update4(input)
 		end
-		if scriptselected == "backdoor" then
-			descri.Text = "backdoor.exe for scan place to FE access (Only place ban possible)."
+	end)
+	
+	--Synapse X Script Hub Controller
+	
+	ScriptHubButton.MouseButton1Click:Connect(function()
+		if ScriptHub.Visible == true then
+			ScriptHub.Visible = false
+		elseif ScriptHub.Visible == false then
+			ScriptHub.Visible = true
+		end
+	end)
+	
+	--Synapse X Script Hub Controller 2
+	
+	local function update5(input)
+		local delta = input.Position - dragStart5
+		ScriptHub.Position = UDim2.new(startPos5.X.Scale, startPos5.X.Offset + delta.X, startPos5.Y.Scale, startPos5.Y.Offset + delta.Y)
+	end
+	
+	ScriptHub.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging5 = true
+			dragStart5 = input.Position
+			startPos5 = ScriptHub.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging5 = false
+				end
+			end)
+		end
+	end)
+	
+	ScriptHub.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput5 = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput5 and dragging5 then
+			update5(input)
+		end
+	end)
+	
+	--Synapse X Script Hub Controller 4
+	
+	CloseScriptHub.MouseButton1Click:Connect(function()
+		ScriptSelected = "None"
+		ScriptHub.Visible = false
+	end)
+	
+	--Synapse X Script Hub Controller 5
+	
+	ExecuteScriptHub.MouseButton1Click:Connect(function()
+		if Injected == true then
+			if ScriptSelected == "None" then
+	
+			end
+			if ScriptSelected == "Dex" then
+				loadstring(game:HttpGet("https://pastebin.com/raw/J8AX35Fg"))()
+			end
+			if ScriptSelected == "Spy" then
+				loadstring(game:HttpGet"https://gitlab.com/te4224/Scripts/-/raw/main/Universal%20Aimbot%20N%20Esp/v2/main.lua")()
+			end
+			if ScriptSelected == "Esp" then
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))()
+			end
+			if ScriptSelected == "Backdoor" then
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua"))()
+			end
+		end
+		if Injected == false then
+			ExecuteScriptHub.Text = "Not Attached!"
+			wait(1)
+			ExecuteScriptHub.Text = "Execute"
+		end
+	end)
+	
+	--Synapse X Attach Controller
+	
+	Attach.MouseButton1Click:Connect(function()
+		if Injected == true then
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Already injected!)"
+			wait(1)
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Beta)"
+		end
+		if Injected == false then
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Checking...)"
+			wait(0.1)
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Injecting...)"
+			wait(1.5)
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Checking Whitelist...)"
+			wait(0.8)
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Scanning...)"
+			wait(0.3)
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Ready!)"
+			wait(0.5)
+			Title.Text = "Synapse X - "..SynapseXVerison..""
+			Injected = true
+		end
+	end)
+	
+	--Synapse Execute Controller
+	
+	Execute.MouseButton1Click:Connect(function()
+		if Injected == true then
+			loadstring(Source.Text)()
+		end
+		if Injected == false then
+			Title.Text = "Synapse X - "..SynapseXVerison.." (Not injected! Press inject!)"
+		end
+	end)
+	
+	--Synapse X Clear Controller
+	
+	Clear.MouseButton1Click:Connect(function()
+		Source.Text = ""
+	end)
+	
+	--Synapse X Script Hub Controller 7
+	
+	while wait() do
+		if ScriptHub.Visible == true then
+			if ScriptSelected == "None" then
+				DescriptionText.Text = ""
+			end
+			if ScriptSelected == "Dex" then
+				DescriptionText.Text = "A version of the popular Dex explorer with patches specifically for Synapse X."
+			end
+			if ScriptSelected == "Esp" then
+				DescriptionText.Text = "ESP Made by ic3w0lf using the Drawing API."
+			end
+			if ScriptSelected == "Spy" then
+				DescriptionText.Text = "Aimbot/Esp Credits in script."
+			end
+			if ScriptSelected == "Backdoor" then
+				DescriptionText.Text = "backdoor.exe for scan place to FE access (Only place ban possible)."
+			end
 		end
 	end
 end
+coroutine.wrap(TFKNA_fake_script)()
