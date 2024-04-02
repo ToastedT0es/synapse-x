@@ -637,7 +637,6 @@ synapsex3.TextSize = 14.000
 
 UICorner_12.Parent = OptionSpage
 
-coroutine.wrap(YVPCQ_fake_script)()
 local function TFKNA_fake_script() -- SynapseX.Controller 
 	local script = Instance.new('LocalScript', SynapseX)
 
