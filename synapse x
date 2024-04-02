@@ -1,4 +1,4 @@
-NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))() local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))() Notification:Notify( {Title = "Synapse X", Description = "Made by ToastedT0es and br7hfan."}, {OutlineColor = Color3.fromRGB(219, 69, 39),Time = 5, Type = "image"}, {Image = "http://www.roblox.com/asset/?id=0", ImageColor = Color3.fromRGB(219, 69, 39)} )
+NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))() local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))() Notification:Notify( {Title = "Synapse X", Description = "Made by ToastedT0es and voidgamer_coregamefan."}, {OutlineColor = Color3.fromRGB(219, 69, 39),Time = 5, Type = "image"}, {Image = "http://www.roblox.com/asset/?id=0", ImageColor = Color3.fromRGB(219, 69, 39)} )
 
 wait(1)
 
