@@ -39,26 +39,32 @@ local Inject = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local Logo = Instance.new("ImageLabel")
 local SynapseXButton = Instance.new("ImageButton")
+local Frame = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
 local ScriptHub_2 = Instance.new("Frame")
-local bar = Instance.new("Frame")
-local select = Instance.new("Frame")
-local dex = Instance.new("TextButton")
-local esp = Instance.new("TextButton")
-local spy = Instance.new("TextButton")
-local dumper = Instance.new("TextButton")
-local backdoor = Instance.new("TextButton")
+local Bar_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Select = Instance.new("Frame")
+local Dex = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local Spy = Instance.new("TextButton")
+local Backdoor = Instance.new("TextButton")
 local Description = Instance.new("Frame")
 local DescriptionText = Instance.new("TextLabel")
-local title = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
 local Execute_2 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
 local Close_2 = Instance.new("TextButton")
-local title_2 = Instance.new("ImageLabel")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
+local Logo_2 = Instance.new("ImageLabel")
+local UICorner_16 = Instance.new("UICorner")
 local OptionSpage = Instance.new("Frame")
-local title_3 = Instance.new("TextLabel")
-local title_4 = Instance.new("ImageLabel")
-local synapsex3 = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local Logo_3 = Instance.new("ImageLabel")
+local SynapseXV3 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 
 SynapseX.Name = "SynapseX"
 SynapseX.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -409,113 +415,112 @@ Logo.ImageRectSize = Vector2.new(138, 167)
 
 SynapseXButton.Name = "SynapseXButton"
 SynapseXButton.Parent = SynapseX
-SynapseXButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SynapseXButton.BackgroundColor3 = Color3.fromRGB(0, 29, 59)
 SynapseXButton.BackgroundTransparency = 1.000
+SynapseXButton.BorderColor3 = Color3.fromRGB(0, 0, 49)
+SynapseXButton.Position = UDim2.new(0.920560777, 0, 0.0380622819, 0)
 SynapseXButton.Size = UDim2.new(0, 24, 0, 28)
 SynapseXButton.Visible = false
 SynapseXButton.ZIndex = 14
 SynapseXButton.Image = "http://www.roblox.com/asset/?id=7641125882"
 SynapseXButton.ImageRectSize = Vector2.new(138, 167)
 
+Frame.Parent = SynapseXButton
+Frame.BackgroundColor3 = Color3.fromRGB(0, 29, 59)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 49)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-0.208333328, 0, -0.107142858, 0)
+Frame.Size = UDim2.new(0, 33, 0, 34)
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = Frame
+
 ScriptHub_2.Name = "ScriptHub"
 ScriptHub_2.Parent = SynapseX
 ScriptHub_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 ScriptHub_2.BorderSizePixel = 0
-ScriptHub_2.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
+ScriptHub_2.Position = UDim2.new(0.159770712, 0, 0.0531527512, 0)
 ScriptHub_2.Size = UDim2.new(0, 290, 0, 305)
 ScriptHub_2.Visible = false
 ScriptHub_2.ZIndex = 100
 
-bar.Name = "bar"
-bar.Parent = ScriptHub_2
-bar.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-bar.BackgroundTransparency = 0.800
-bar.BorderSizePixel = 0
-bar.Position = UDim2.new(0, 0, -0.0029638072, 0)
-bar.Size = UDim2.new(0, 290, 0, 25)
+Bar_2.Name = "Bar"
+Bar_2.Parent = ScriptHub_2
+Bar_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Bar_2.BackgroundTransparency = 0.800
+Bar_2.BorderSizePixel = 0
+Bar_2.Position = UDim2.new(0, 0, -0.0029638072, 0)
+Bar_2.Size = UDim2.new(0, 290, 0, 25)
 
-select.Name = "select"
-select.Parent = ScriptHub_2
-select.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
-select.BorderSizePixel = 0
-select.Position = UDim2.new(0.0299979374, 0, 0.104918033, 0)
-select.Size = UDim2.new(0, 82, 0, 264)
-select.ZIndex = 110
+UICorner_12.Parent = Bar_2
 
-dex.Name = "dex"
-dex.Parent = select
-dex.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-dex.BackgroundTransparency = 1.000
-dex.BorderColor3 = Color3.fromRGB(0, 0, 49)
-dex.BorderSizePixel = 0
-dex.Position = UDim2.new(0.0121960752, 0, -1.49011612e-08, 0)
-dex.Size = UDim2.new(0, 80, 0, 18)
-dex.ZIndex = 110
-dex.Font = Enum.Font.SourceSans
-dex.Text = " Dark Dex"
-dex.TextColor3 = Color3.fromRGB(255, 255, 255)
-dex.TextSize = 14.000
-dex.TextXAlignment = Enum.TextXAlignment.Left
+Select.Name = "Select"
+Select.Parent = ScriptHub_2
+Select.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Select.BorderSizePixel = 0
+Select.Position = UDim2.new(0.0299979374, 0, 0.104918033, 0)
+Select.Size = UDim2.new(0, 82, 0, 264)
+Select.ZIndex = 110
 
-esp.Name = "esp"
-esp.Parent = select
-esp.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-esp.BackgroundTransparency = 1.000
-esp.BorderColor3 = Color3.fromRGB(0, 0, 49)
-esp.BorderSizePixel = 0
-esp.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
-esp.Size = UDim2.new(0, 80, 0, 18)
-esp.ZIndex = 110
-esp.Font = Enum.Font.SourceSans
-esp.Text = " Unnamed ESP"
-esp.TextColor3 = Color3.fromRGB(255, 255, 255)
-esp.TextSize = 14.000
-esp.TextXAlignment = Enum.TextXAlignment.Left
+Dex.Name = "Dex"
+Dex.Parent = Select
+Dex.BackgroundColor3 = Color3.fromRGB(0, 29, 59)
+Dex.BackgroundTransparency = 1.000
+Dex.BorderColor3 = Color3.fromRGB(0, 0, 49)
+Dex.BorderSizePixel = 0
+Dex.Position = UDim2.new(0.0121960752, 0, -1.49011612e-08, 0)
+Dex.Size = UDim2.new(0, 80, 0, 18)
+Dex.ZIndex = 110
+Dex.Font = Enum.Font.SourceSans
+Dex.Text = " Dark Dex"
+Dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dex.TextSize = 14.000
+Dex.TextXAlignment = Enum.TextXAlignment.Left
 
-spy.Name = "spy"
-spy.Parent = select
-spy.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-spy.BackgroundTransparency = 1.000
-spy.BorderColor3 = Color3.fromRGB(0, 0, 49)
-spy.BorderSizePixel = 0
-spy.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
-spy.Size = UDim2.new(0, 80, 0, 18)
-spy.ZIndex = 110
-spy.Font = Enum.Font.SourceSans
-spy.Text = "Aimbot/Esp"
-spy.TextColor3 = Color3.fromRGB(255, 255, 255)
-spy.TextSize = 14.000
-spy.TextXAlignment = Enum.TextXAlignment.Left
+Esp.Name = "Esp"
+Esp.Parent = Select
+Esp.BackgroundColor3 = Color3.fromRGB(0, 29, 59)
+Esp.BackgroundTransparency = 1.000
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 49)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.0121960752, 0, 0.0681818053, 0)
+Esp.Size = UDim2.new(0, 80, 0, 18)
+Esp.ZIndex = 110
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = " Unnamed ESP"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 14.000
+Esp.TextXAlignment = Enum.TextXAlignment.Left
 
-dumper.Name = "dumper"
-dumper.Parent = select
-dumper.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-dumper.BackgroundTransparency = 1.000
-dumper.BorderColor3 = Color3.fromRGB(0, 0, 49)
-dumper.BorderSizePixel = 0
-dumper.Position = UDim2.new(0.0121960752, 0, 0.204545438, 0)
-dumper.Size = UDim2.new(0, 80, 0, 18)
-dumper.ZIndex = 110
-dumper.Font = Enum.Font.SourceSans
-dumper.Text = " SaveInstance"
-dumper.TextColor3 = Color3.fromRGB(255, 255, 255)
-dumper.TextSize = 14.000
-dumper.TextXAlignment = Enum.TextXAlignment.Left
+Spy.Name = "Spy"
+Spy.Parent = Select
+Spy.BackgroundColor3 = Color3.fromRGB(0, 29, 59)
+Spy.BackgroundTransparency = 1.000
+Spy.BorderColor3 = Color3.fromRGB(0, 0, 49)
+Spy.BorderSizePixel = 0
+Spy.Position = UDim2.new(0.0121960752, 0, 0.136363626, 0)
+Spy.Size = UDim2.new(0, 80, 0, 18)
+Spy.ZIndex = 110
+Spy.Font = Enum.Font.SourceSans
+Spy.Text = "Aimbot/Esp"
+Spy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spy.TextSize = 14.000
+Spy.TextXAlignment = Enum.TextXAlignment.Left
 
-backdoor.Name = "backdoor"
-backdoor.Parent = select
-backdoor.BackgroundColor3 = Color3.fromRGB(0, 32, 61)
-backdoor.BackgroundTransparency = 1.000
-backdoor.BorderColor3 = Color3.fromRGB(0, 0, 49)
-backdoor.BorderSizePixel = 0
-backdoor.Position = UDim2.new(0.0121960752, 0, 0.274545431, 0)
-backdoor.Size = UDim2.new(0, 80, 0, 18)
-backdoor.ZIndex = 110
-backdoor.Font = Enum.Font.SourceSans
-backdoor.Text = " backdoor.exe"
-backdoor.TextColor3 = Color3.fromRGB(255, 255, 255)
-backdoor.TextSize = 14.000
-backdoor.TextXAlignment = Enum.TextXAlignment.Left
+Backdoor.Name = "Backdoor"
+Backdoor.Parent = Select
+Backdoor.BackgroundColor3 = Color3.fromRGB(0, 29, 59)
+Backdoor.BackgroundTransparency = 1.000
+Backdoor.BorderColor3 = Color3.fromRGB(0, 0, 49)
+Backdoor.BorderSizePixel = 0
+Backdoor.Position = UDim2.new(0.0121960528, 0, 0.202575743, 0)
+Backdoor.Size = UDim2.new(0, 80, 0, 18)
+Backdoor.ZIndex = 110
+Backdoor.Font = Enum.Font.SourceSans
+Backdoor.Text = " backdoor.exe"
+Backdoor.TextColor3 = Color3.fromRGB(255, 255, 255)
+Backdoor.TextSize = 14.000
+Backdoor.TextXAlignment = Enum.TextXAlignment.Left
 
 Description.Name = "Description"
 Description.Parent = ScriptHub_2
@@ -541,17 +546,19 @@ DescriptionText.TextWrapped = true
 DescriptionText.TextXAlignment = Enum.TextXAlignment.Left
 DescriptionText.TextYAlignment = Enum.TextYAlignment.Top
 
-title.Name = "title"
-title.Parent = ScriptHub_2
-title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title.BackgroundTransparency = 1.000
-title.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
-title.Size = UDim2.new(0, 200, 0, 22)
-title.ZIndex = 110
-title.Font = Enum.Font.SourceSans
-title.Text = "Synapse X - 1.0.0 (Beta) Script Hub"
-title.TextColor3 = Color3.fromRGB(255, 255, 255)
-title.TextSize = 16.000
+UICorner_13.Parent = Description
+
+Title_2.Name = "Title"
+Title_2.Parent = ScriptHub_2
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
+Title_2.Size = UDim2.new(0, 200, 0, 22)
+Title_2.ZIndex = 110
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "Synapse X - Unknown Script Hub"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 16.000
 
 Execute_2.Name = "Execute"
 Execute_2.Parent = ScriptHub_2
@@ -566,6 +573,8 @@ Execute_2.Text = "Execute"
 Execute_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute_2.TextSize = 14.000
 
+UICorner_14.Parent = Execute_2
+
 Close_2.Name = "Close"
 Close_2.Parent = ScriptHub_2
 Close_2.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
@@ -579,65 +588,69 @@ Close_2.Text = "Close"
 Close_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close_2.TextSize = 14.000
 
-title_2.Name = "title"
-title_2.Parent = ScriptHub_2
-title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_2.BackgroundTransparency = 1.000
-title_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
-title_2.Size = UDim2.new(0, 18, 0, 24)
-title_2.ZIndex = 110
-title_2.Image = "http://www.roblox.com/asset/?id=7641125882"
-title_2.ImageRectSize = Vector2.new(138, 167)
+UICorner_15.Parent = Close_2
 
-UICorner_11.Parent = ScriptHub_2
+Logo_2.Name = "Logo"
+Logo_2.Parent = ScriptHub_2
+Logo_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo_2.BackgroundTransparency = 1.000
+Logo_2.Position = UDim2.new(0.00870821718, 0, 0, 0)
+Logo_2.Size = UDim2.new(0, 18, 0, 24)
+Logo_2.ZIndex = 110
+Logo_2.Image = "http://www.roblox.com/asset/?id=7641125882"
+Logo_2.ImageRectSize = Vector2.new(138, 167)
+
+UICorner_16.Parent = ScriptHub_2
 
 OptionSpage.Name = "OptionSpage"
 OptionSpage.Parent = SynapseX
 OptionSpage.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 OptionSpage.BorderSizePixel = 0
-OptionSpage.Position = UDim2.new(0.433135211, 0, 0.502979755, 0)
+OptionSpage.Position = UDim2.new(0.458836138, 0, 0.464917451, 0)
 OptionSpage.Size = UDim2.new(0, 290, 0, 305)
 OptionSpage.Visible = false
 OptionSpage.ZIndex = 100
 
-title_3.Name = "title"
-title_3.Parent = OptionSpage
-title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_3.BackgroundTransparency = 1.000
-title_3.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
-title_3.Size = UDim2.new(0, 200, 0, 22)
-title_3.ZIndex = 110
-title_3.Font = Enum.Font.SourceSans
-title_3.Text = "Synapse X - 1.0.0 (Beta) Options Menu"
-title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-title_3.TextSize = 16.000
+Title_3.Name = "Title"
+Title_3.Parent = OptionSpage
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.161097407, 0, -0.000307376496, 0)
+Title_3.Size = UDim2.new(0, 200, 0, 22)
+Title_3.ZIndex = 110
+Title_3.Font = Enum.Font.SourceSans
+Title_3.Text = "Synapse X - Unknown Options Menu"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 16.000
 
-title_4.Name = "title"
-title_4.Parent = OptionSpage
-title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-title_4.BackgroundTransparency = 1.000
-title_4.Position = UDim2.new(0.00870821718, 0, 0, 0)
-title_4.Size = UDim2.new(0, 18, 0, 24)
-title_4.ZIndex = 110
-title_4.Image = "http://www.roblox.com/asset/?id=7641125882"
-title_4.ImageRectSize = Vector2.new(138, 167)
+Logo_3.Name = "Logo"
+Logo_3.Parent = OptionSpage
+Logo_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo_3.BackgroundTransparency = 1.000
+Logo_3.Position = UDim2.new(0.00870821718, 0, 0, 0)
+Logo_3.Size = UDim2.new(0, 18, 0, 24)
+Logo_3.ZIndex = 110
+Logo_3.Image = "http://www.roblox.com/asset/?id=7641125882"
+Logo_3.ImageRectSize = Vector2.new(138, 167)
 
-synapsex3.Name = "synapsex3"
-synapsex3.Parent = OptionSpage
-synapsex3.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
-synapsex3.BackgroundTransparency = 0.800
-synapsex3.BorderSizePixel = 0
-synapsex3.Position = UDim2.new(0.307573438, 0, 0.391106516, 0)
-synapsex3.Size = UDim2.new(0, 123, 0, 30)
-synapsex3.ZIndex = 110
-synapsex3.Font = Enum.Font.Arial
-synapsex3.Text = "Synapse X v3"
-synapsex3.TextColor3 = Color3.fromRGB(255, 255, 255)
-synapsex3.TextSize = 14.000
+SynapseXV3.Name = "SynapseXV3"
+SynapseXV3.Parent = OptionSpage
+SynapseXV3.BackgroundColor3 = Color3.fromRGB(104, 104, 104)
+SynapseXV3.BackgroundTransparency = 0.800
+SynapseXV3.BorderSizePixel = 0
+SynapseXV3.Position = UDim2.new(0.307573438, 0, 0.391106516, 0)
+SynapseXV3.Size = UDim2.new(0, 123, 0, 30)
+SynapseXV3.ZIndex = 110
+SynapseXV3.Font = Enum.Font.Arial
+SynapseXV3.Text = "Synapse X v3"
+SynapseXV3.TextColor3 = Color3.fromRGB(255, 255, 255)
+SynapseXV3.TextSize = 14.000
 
-UICorner_12.Parent = OptionSpage
+UICorner_17.Parent = SynapseXV3
 
-local function TFKNA_fake_script() -- SynapseX.Controller 
+UICorner_18.Parent = OptionSpage
+
+local function NWBCQMT_fake_script() -- SynapseX.Controller 
 	local script = Instance.new('LocalScript', SynapseX)
 
 	local SynapseXVerison = "4.5.8"
@@ -661,6 +674,9 @@ local function TFKNA_fake_script() -- SynapseX.Controller
 	local Execute = MainFrame.Execute
 	local Title = MainFrame.Title
 	local Clear = MainFrame.Clear
+	local Close = MainFrame.Bar.Close
+	local MiniButton = MainFrame.Bar.Mini
+	local MinButton = MainFrame.Bar.Min
 	
 	local CurrentTab
 	
@@ -687,9 +703,36 @@ local function TFKNA_fake_script() -- SynapseX.Controller
 	local ScriptSelected = "None"
 	local Injected = false
 	
-	--Synapse Set Verison Controller
+	--Synapse X Set Verison Controller
 	
 	Title.Text = "Synapse X - "..SynapseXVerison
+	
+	--Synapse X Close Controller
+	
+	Close.MouseButton1Click:Connect(function()
+		MainFrame.Visible=false
+		ScriptHub.Visible=false
+		OptionSpage.Visible=false
+		SynapseXButton.Visible=true
+	end)
+	
+	--Synapse X Mini Button Controller
+	
+	MiniButton.MouseButton1Click:Connect(function()
+		MainFrame.Visible=false
+		ScriptHub.Visible=false
+		OptionSpage.Visible=false
+		SynapseXButton.Visible=true
+	end)
+	
+	--Synapse X Min Button Controller
+	
+	MinButton.MouseButton1Click:Connect(function()
+		MainFrame.Visible=false
+		ScriptHub.Visible=false
+		OptionSpage.Visible=false
+		SynapseXButton.Visible=true
+	end)
 	
 	--Synapse X Button Controller
 	
@@ -1223,6 +1266,7 @@ local function TFKNA_fake_script() -- SynapseX.Controller
 	
 	Execute.MouseButton1Click:Connect(function()
 		if Injected == true then
+			print(Source.Text)
 			loadstring(Source.Text)()
 		end
 		if Injected == false then
@@ -1258,4 +1302,34 @@ local function TFKNA_fake_script() -- SynapseX.Controller
 		end
 	end
 end
-coroutine.wrap(TFKNA_fake_script)()
+coroutine.wrap(NWBCQMT_fake_script)()
+local function MZVBPB_fake_script() -- SynapseX.Notifications 
+	local script = Instance.new('LocalScript', SynapseX)
+
+	local SynapseXVerison = "4.5.8"
+	
+	local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+	local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+	
+	Notification:Notify({
+		Title = "Synapse X - "..SynapseXVerison,
+		Description = "Made by ToastedT0es and VoidGamerCoreGameFan."},
+	{OutlineColor = Color3.fromRGB(219, 69, 39),
+		Time = 5,
+		Type = "image"},
+	{Image = "http://www.roblox.com/asset/?id=7641125882",
+		ImageColor = Color3.fromRGB(219, 69, 39)
+	})
+	
+	Notification:Notify({Title = "Synapse X - "..SynapseXVerison,
+		Description = "Discord: madcityguy3."},
+	{OutlineColor = Color3.fromRGB(219, 69, 39),
+		Time = 5,
+		Type = "image"},
+	{Image = "http://www.roblox.com/asset/?id=7641125882",
+		ImageColor = Color3.fromRGB(219, 69, 39)
+	})
+	
+	wait(1)
+end
+coroutine.wrap(MZVBPB_fake_script)()
