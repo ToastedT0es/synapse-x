@@ -102,8 +102,8 @@ synminbutt.Name = "synminbutt"
 synminbutt.Parent = SynapseXreal
 synminbutt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 synminbutt.BackgroundTransparency = 1.000
-synminbutt.Position = UDim2.new(0, 0, 0, 0)
-synminbutt.Size = UDim2.new(0, 24, 0, 28)
+synminbutt.Position = UDim2.new(650, 0, 10, 0)
+synminbutt.Size = UDim2.new(0, 40, 0, 30)
 synminbutt.Visible = false
 synminbutt.ZIndex = 14
 synminbutt.Image = "http://www.roblox.com/asset/?id=7641125882"
