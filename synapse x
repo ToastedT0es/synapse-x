@@ -17,14 +17,6 @@ Notification:Notify( {Title = "Synapse X", Description = "Discord: madcityguy30.
 	ImageColor = Color3.fromRGB(219, 69, 39)
 })
 
-Notification:Notify( {Title = "Synapse X", Description = "Still work in progress Beta."},
-{OutlineColor = Color3.fromRGB(219, 69, 39),
-	Time = 5,
-	Type = "image"},
-{Image = "http://www.roblox.com/asset/?id=11330378088",
-	ImageColor = Color3.fromRGB(219, 69, 39)
-})
-
 wait(1)
 
 pcall(function() game.CoreGui["Synapse X"]:Destroy() end)
@@ -149,7 +141,7 @@ Mini.TextSize = 14.000
 Mini.MouseButton1Click:Connect(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = "Synapse X";
-        Text = "Synapse X - ToastedT0es minimized.";
+        Text = "Synapse X - Beta minimized.";
         Duration = 2;
     })
     synminbutt.Visible = true
@@ -352,7 +344,7 @@ title.BackgroundTransparency = 1.000
 title.Position = UDim2.new(0.330062926, 0, 0.00625000056, 0)
 title.Size = UDim2.new(0, 200, 0, 22)
 title.Font = Enum.Font.SourceSans
-title.Text = "Synapse X - ToastedT0es"
+title.Text = "Synapse X - Beta"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 16.000
 
@@ -432,7 +424,7 @@ Attach.MouseButton1Click:Connect(function()
     if injected == true then
         title.Text = "Synapse X - (Already injected!)"
         wait(1)
-        title.Text = "Synapse X - ToastedT0es)"
+        title.Text = "Synapse X - Beta."
     end
     if injected == false then
         title.Text = "Synapse X - (Checking...)"
@@ -447,7 +439,7 @@ Attach.MouseButton1Click:Connect(function()
         wait(0.3)
         title.Text = "Synapse X - (Ready!)"
         wait(0.5)
-        title.Text = "Synapse X - (ToastedT0es)"
+        title.Text = "Synapse X - Beta."
         injected = true
     end
 end)
