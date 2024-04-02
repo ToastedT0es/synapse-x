@@ -7,16 +7,16 @@ Notification:Notify({
 {OutlineColor = Color3.fromRGB(219, 69, 39),
 	Time = 5,
 	Type = "image"},
-{Image = "http://www.roblox.com/asset/?id=7641125882",
+{Image = "http://www.roblox.com/asset/?id=9524079134",
 	ImageColor = Color3.fromRGB(219, 69, 39)
 })
 
 Notification:Notify({Title = "Synapse X - 1.0.0 (Beta)",
-	Description = "Discord: madcityguy3."},
+	Description = "Discord: madcityguy30."},
 {OutlineColor = Color3.fromRGB(219, 69, 39),
 	Time = 5,
 	Type = "image"},
-{Image = "http://www.roblox.com/asset/?id=7641125882",
+{Image = "http://www.roblox.com/asset/?id=9524079134",
 	ImageColor = Color3.fromRGB(219, 69, 39)
 })
 
