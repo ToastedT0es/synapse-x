@@ -1,3 +1,4 @@
+--please dont leave i have no friends ):
 local SynapseX = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
